@@ -1,0 +1,17 @@
+{
+  "name": "youtube-music",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "install-wsl": "npm i && npm un electron && export npm_config_platform=win32 && npm i -D electron && unset npm_config_platform",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --overwrite"
+  },
+  "author": "Maikel David Perez Gomez",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^5.0.7",
+    "electron-packager": "^14.0.2"
+  }
+}
